@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const generateREADME = require('./utils/generateMarkdown')
+const generateMarkdown = require('./utils/generateMarkdown')
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -23,7 +23,7 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'What is the project usage?',
+        message: 'What are some examples of use for the app?',
     }, 
     {
         type: 'input',
@@ -44,7 +44,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'License?',
-        choices: ['MIT', 'ISC', 'gnugplv3'],
+        choices: ['MIT', 'ISC', 'apache'],
         filter(value) {
             return value.toLowerCase();
         }
@@ -55,7 +55,7 @@ const questions = [
 function writeToFile() {  //fleName, data
     return inquirer.prompt(questions)
     .then((answers)=>{
-        const mark = generateREADME.generateMarkdown(answers)
+        const mark = generateMarkdown(answers)
         // console.log(mark)
         // return answers
         fs.writeFile('README.md', mark, function(err) {

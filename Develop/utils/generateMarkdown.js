@@ -1,5 +1,3 @@
-// class generateMarkdown {
-
   function renderLicenseBadge(license) {
     const badges = {
       mit: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
@@ -26,7 +24,7 @@
     }
   }
 
-  function generateMarkdown(data) { //function
+  function generateMarkdown(data) { 
     return `# ${data.title}
 
 ${renderLicenseBadge(data.license)}
@@ -65,23 +63,5 @@ ${data.contributing}
 ${renderLicenseSection(data.license)}
     `
    }
-
-
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-
-
-
-// // TODO: Create a function that returns the license link
-// // If there is no license, return an empty string
-
-
-
- // // TODO: Create a function that returns the license section of README
-// // If there is no license, return an empty string
-
-// TODO: Create a function to generate markdown for README
- 
- 
 
 module.exports = generateMarkdown;

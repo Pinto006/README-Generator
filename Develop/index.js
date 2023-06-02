@@ -56,8 +56,7 @@ function writeToFile() {  //fleName, data
     return inquirer.prompt(questions)
     .then((answers)=>{
         const mark = generateMarkdown(answers)
-        // console.log(mark)
-        // return answers
+      
         fs.writeFile('README.md', mark, function(err) {
             if(err) {
                 console.log('README not saved', err)
@@ -72,8 +71,3 @@ function writeToFile() {  //fleName, data
 }
 writeToFile();
 
-// TODO: Create a function to initialize app
-// function init() {}
-
-// Function call to initialize app
-// init();

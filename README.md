@@ -11,7 +11,7 @@ To use, first be sure to install inquier by typing "npm i inquirer@8.2.4" into t
 
 ## Usage
 
-![alt text](Develop/images/screenshot.png)
+![alt text](Develop/images/Screenshot.png)
 
 ## License
 

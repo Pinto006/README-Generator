@@ -36,6 +36,8 @@ ${renderLicenseBadge(data.license)}
 
   - [Contributing](#contributing)
 
+  - [Tests](#tests)
+
   - [Installation](#installation)
 
   - [Questions](#questions)
@@ -53,6 +55,9 @@ ${data.installation}
     
 ## Contributing
 ${data.contributing}
+
+## Tests
+${data.tests}
     
 ## Questions
 [Contact Us](mailto:${data.email})

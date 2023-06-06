@@ -32,6 +32,11 @@ const questions = [
     }, 
     {
         type: 'input',
+        name: 'tests',
+        message: 'What tests were conducted?',
+    }, 
+    {
+        type: 'input',
         name: 'email',
         message: 'What is your contact email for questions?',
     }, 

@@ -10,6 +10,7 @@ professional README.  It will then generate the file into the code editor automa
 To use, first be sure to install inquier by typing "npm i inquirer@8.2.4" into the terminal.  Once the package.json is installed, type node index.js into the terminal.  The prompt questions for your READEME will begin.  
 
 ## Usage
+Screen recording URL: https://drive.google.com/file/d/1chbEjH-YtqWwlylJNRVzhIZIkA1vGKD3/view?usp=drive_link
 
 ![alt text](Develop/images/Screenshot.png)
 

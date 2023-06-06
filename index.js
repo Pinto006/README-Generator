@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const generateMarkdown = require('./utils/generateMarkdown')
+const generateMarkdown = require('./app/utils/generateMarkdown')
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -62,7 +62,7 @@ function writeToFile() {  //fleName, data
     .then((answers)=>{
         const mark = generateMarkdown(answers)
       
-        fs.writeFile('README.md', mark, function(err) {
+        fs.writeFile('./app/utils/README.md', mark, function(err) {
             if(err) {
                 console.log('README not saved', err)
             } else {

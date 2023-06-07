@@ -9,7 +9,7 @@ To use, first be sure to install inquier by typing "npm i inquirer@8.2.4" into t
 ## Usage
 Screen recording URL: https://drive.google.com/file/d/1chbEjH-YtqWwlylJNRVzhIZIkA1vGKD3/view?usp=drive_link
 
-![Alt text](app/images/Screenshot.png)
+![Alt text](src/images/Screenshot.png)
 
 ## License
 No License
